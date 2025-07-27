@@ -9,3 +9,4 @@ build
 # Env
 
 .env
+/src/generated/prisma
