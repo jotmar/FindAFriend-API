@@ -6,21 +6,27 @@
   "scripts": {
     "dev": "npx tsx watch ./src/server.ts",
     "start": "node ./build/server.js",
-    "build": "npx tsup"
+    "build": "npx tsup",
+    "test": "npx vitest run --project unit",
+    "test:watch": "npx vitest --project unit"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@biomejs/biome": "2.1.2",
+    "@faker-js/faker": "9.9.0",
     "@types/node": "24.1.0",
     "prisma": "6.12.0",
     "tsup": "8.5.0",
     "tsx": "4.20.3",
-    "typescript": "5.8.3"
+    "typescript": "5.8.3",
+    "vite-tsconfig-paths": "5.1.4",
+    "vitest": "3.2.4"
   },
   "dependencies": {
     "@prisma/client": "6.12.0",
+    "bcryptjs": "3.0.2",
     "dotenv": "17.2.1",
     "fastify": "5.4.0",
     "zod": "4.0.10"
