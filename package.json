@@ -19,16 +19,17 @@
     "@biomejs/biome": "2.1.2",
     "@faker-js/faker": "9.9.0",
     "@types/node": "24.1.0",
+    "@types/supertest": "6.0.3",
     "prisma": "6.12.0",
     "supertest": "7.1.4",
     "tsup": "8.5.0",
     "tsx": "4.20.3",
     "typescript": "5.8.3",
     "vite-tsconfig-paths": "5.1.4",
-    "@types/supertest": "6.0.3",
     "vitest": "3.2.4"
   },
   "dependencies": {
+    "@fastify/cookie": "11.0.2",
     "@fastify/jwt": "9.1.0",
     "@prisma/client": "6.12.0",
     "bcryptjs": "3.0.2",
