@@ -8,7 +8,9 @@
     "start": "node ./build/server.js",
     "build": "npx tsup",
     "test": "npx vitest run --project unit",
-    "test:watch": "npx vitest --project unit"
+    "test:watch": "npx vitest --project unit",
+    "test:e2e": "npx vitest run --project e2e",
+    "test:e2e:watch": "npx vitest --project e2e"
   },
   "keywords": [],
   "author": "",
@@ -18,10 +20,12 @@
     "@faker-js/faker": "9.9.0",
     "@types/node": "24.1.0",
     "prisma": "6.12.0",
+    "supertest": "7.1.4",
     "tsup": "8.5.0",
     "tsx": "4.20.3",
     "typescript": "5.8.3",
     "vite-tsconfig-paths": "5.1.4",
+    "@types/supertest": "6.0.3",
     "vitest": "3.2.4"
   },
   "dependencies": {
