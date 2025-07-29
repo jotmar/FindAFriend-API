@@ -12,4 +12,5 @@ export interface PetRepository {
 	items: Pet[]
 	create(data: Prisma.PetUncheckedCreateInput): Promise<Pet>
 	fetchByOrg(orgId: string, options?: {}): Promise<Pet[]>
+	findById(id: string): Promise<Pet | null>
 }

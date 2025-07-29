@@ -20,6 +20,16 @@ export class InMemoryPetRepository implements PetRepository {
 		return pet
 	}
 
+	async findById(id: string): Promise<Pet | null> {
+		const pet = this.items.find(item => item.id === id)
+
+		if (!pet) {
+			return null
+		}
+
+		return pet
+	}
+
 	async fetchByOrg(orgId: string, options?: PetOptions): Promise<Pet[]> {
 		let pets = this.items.filter(item => item.org_id == orgId)
 
