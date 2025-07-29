@@ -9,7 +9,7 @@ export function makePetData() {
 		breed: 'normal',
 		color: faker.color.human(),
 		size: $Enums.Size.MEDIUM,
-		org_id: randomUUID()
+		org_id: String(randomUUID())
 	}
 
 	return petData

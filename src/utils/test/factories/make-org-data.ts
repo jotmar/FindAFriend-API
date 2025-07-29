@@ -1,4 +1,8 @@
 import { faker } from '@faker-js/faker'
+import { hashSync } from 'bcryptjs'
+
+const password = faker.internet.password()
+
 export function makeOrgData() {
 	const orgData = {
 		name: faker.company.name(),
@@ -7,7 +11,8 @@ export function makeOrgData() {
 		city: faker.location.city(),
 		tel: faker.phone.number(),
 		email: faker.internet.email(),
-		password: faker.internet.password()
+		password,
+		password_hash: hashSync(password, 6)
 	}
 
 	return orgData
