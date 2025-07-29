@@ -3,7 +3,7 @@ import request from 'supertest'
 import { app } from '@/app'
 import { makeOrgData } from '@/utils/test/factories/make-org-data'
 
-describe('Register e2e', () => {
+describe('Authenticate e2e', () => {
 	beforeEach(async () => {
 		app.ready()
 	})
