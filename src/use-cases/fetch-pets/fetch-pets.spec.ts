@@ -8,7 +8,7 @@ import { OrgRepository } from '@/repositories/org-repository'
 import { makeOrgData } from '@/utils/test/factories/make-org-data'
 import { Org } from '@prisma/client'
 
-describe('Register UseCase Unit', () => {
+describe('Fetch-Pets UseCase Unit', () => {
 	let sut: FetchPetsUseCase
 	let orgRepository: OrgRepository
 	let petRepository: PetRepository
