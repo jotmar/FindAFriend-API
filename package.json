@@ -10,7 +10,9 @@
     "test": "npx vitest run --project unit",
     "test:watch": "npx vitest --project unit",
     "test:e2e": "npx vitest run --project e2e",
-    "test:e2e:watch": "npx vitest --project e2e"
+    "test:e2e:watch": "npx vitest --project e2e",
+    "test:all": "npx vitest run",
+    "test:all:watch": "npx vitest"
   },
   "keywords": [],
   "author": "",
