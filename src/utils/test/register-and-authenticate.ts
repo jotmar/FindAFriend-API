@@ -14,5 +14,7 @@ export async function registerAndAuthenticate() {
 
 	const { token } = response.body
 
-	return { token }
+	const { city } = orgData
+
+	return { token, city }
 }

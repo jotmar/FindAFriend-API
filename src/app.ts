@@ -7,6 +7,15 @@ import fastifyCookie from '@fastify/cookie'
 
 export const app = fastify()
 
+/* Error Handler */
+/*  */
+
+app.setErrorHandler(async (error, request, reply) => {
+	console.error(error)
+
+	return reply.status(500).send()
+})
+
 /* Plugins */
 /*  */
 
