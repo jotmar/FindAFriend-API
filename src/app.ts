@@ -4,17 +4,14 @@ import { env } from './env/setup'
 import { petsRouter } from './http/controllers/pets/_router'
 import { orgsRouter } from './http/controllers/orgs/_router'
 import fastifyCookie from '@fastify/cookie'
+import { FastifyErrorHandler } from './lib/fastify/error-handler'
 
 export const app = fastify()
 
 /* Error Handler */
 /*  */
 
-app.setErrorHandler(async (error, request, reply) => {
-	console.error(error)
-
-	return reply.status(500).send()
-})
+app.setErrorHandler(FastifyErrorHandler)
 
 /* Plugins */
 /*  */
